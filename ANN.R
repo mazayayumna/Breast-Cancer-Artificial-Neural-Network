@@ -6,7 +6,7 @@ install.packages("vcd") #data visualization
 library(vcd)
 library(MASS) #data
 
-bcancer=read.table("D:\\KULIAHAN\\sem 7\\DSS\\Project 1\\breastcancer.txt",header=T)
+bcancer=read.table("D:\\...\\breastcancer.txt",header=T)
 str(bcancer)
 table(bcancer$diagnosis)
 dummies = dummyVars(diagnosis~.,bcancer, fullRank=TRUE)
